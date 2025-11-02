@@ -15,12 +15,11 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
-        # Ejecutar el escaneo desde el subdirectorio `backend` para analizar solo esa carpeta
-        working-directory: backend
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
 
+          
 
           
 
